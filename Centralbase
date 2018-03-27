@@ -1,0 +1,27 @@
+from time import sleep
+print('Seja bem vindo ao sistemas de médias escolares do ensino Dom Pedro.')
+sleep(3)
+print('Iniciando sistema...')
+sleep(3)
+np = str(input('Professor identifique-se aqui: '))
+print('Olá professor(a) {}, vamos iniciar os calculos de médias.'.format(np))
+na = str(input('Digite o nome do aluno: '))
+nc = int(input('Digite o número de registro do aluno: '))
+print('Analisando...')
+sleep(5)
+print('Muito bom, achamos o cadastro número {} em nome do aluno(a) {}, vamos lançar as médias.'.format(nc, na))
+np = float(input('Digite a média final de português: '))
+nm = float(input('Digite a média final em matemática: '))
+ng = float(input('Digite a nota final em geografia: '))
+nh = float(input('Digite a nota final de história: '))
+nq = float(input('Digite a nota final de quimíca: '))
+print('Muito bem, todas as notas serão analizadas pelo sistema')
+print('Analisando...')
+sleep(5)
+st = (np + np + ng + nh+ nq)/5
+print('A soma total das médias deram {:.1f}.'.format(st))
+if st >= 7.0:
+    print('O aluno(a) {} de registro {} obteve média e encontra-se PROMOVIDO para o próximo ano letivo, obrigado.'.format(na, nc))
+else:
+    print('O aluno(a) {} de registro {} não obteve média e encontra-se RETIDO para o próximo ano letivo, obrigado.'.format(na,nc))
+print('Tenha uma excelente férias porfessor(a).')
